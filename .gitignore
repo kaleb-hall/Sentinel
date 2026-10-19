@@ -1,0 +1,109 @@
+# ---------------------------------------------------------------
+# Python
+# ---------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Packaging / build output
+build/
+dist/
+*.egg-info/
+*.egg
+.eggs/
+wheels/
+sdist/
+
+# ---------------------------------------------------------------
+# Environments (uv)
+# Keep uv.lock and .python-version COMMITTED.
+# ---------------------------------------------------------------
+.venv/
+venv/
+env/
+.python-version.local
+
+# ---------------------------------------------------------------
+# Secrets / local config
+# Commit a .env.example with dummy values instead.
+# ---------------------------------------------------------------
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# ---------------------------------------------------------------
+# Tool caches (ruff, Pyrefly, mypy, pytest, coverage)
+# ---------------------------------------------------------------
+.ruff_cache/
+.pyrefly/
+.mypy_cache/
+.pytest_cache/
+.hypothesis/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+.tox/
+.nox/
+
+# gitleaks report output (if you run it with --report-path)
+gitleaks-report.*
+
+# ---------------------------------------------------------------
+# Notebooks / experiments
+# ---------------------------------------------------------------
+.ipynb_checkpoints/
+*.nbconvert.ipynb
+
+# ---------------------------------------------------------------
+# Data, model outputs, and run artifacts
+# Large or regenerable files stay out of git. Adjust these to
+# match the directories that actually exist in the repo.
+# ---------------------------------------------------------------
+data/raw/
+data/processed/
+data/cache/
+outputs/
+runs/
+results/*
+!results/.gitkeep
+logs/
+*.log
+
+# Cached LLM responses / logprobs / embeddings
+*.npy
+*.npz
+*.pkl
+*.pickle
+*.parquet
+*.arrow
+*.h5
+
+# Model weights (Ollama stores its models in ~/.ollama, but
+# guard against anything accidentally downloaded into the repo)
+*.gguf
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+
+# Experiment trackers
+mlruns/
+wandb/
+
+# ---------------------------------------------------------------
+# Editors / OS
+# ---------------------------------------------------------------
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db

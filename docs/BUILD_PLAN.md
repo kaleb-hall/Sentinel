@@ -4,7 +4,6 @@
 > A service that wraps any LLM endpoint and returns a statistically valid confidence guarantee on each output, abstaining or escalating when the guarantee cannot be met.
 
 **Source paper:** Conf-Gen: Conformal Uncertainty Quantification for Generative Models (arXiv:2605.28920)
-**Drop this file at:** `docs/BUILD_PLAN.md`
 **Owner:** Kaleb
 **Status:** Not started
 

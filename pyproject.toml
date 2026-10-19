@@ -1,0 +1,35 @@
+[project]
+name = "sentinel"
+version = "0.1.0"
+description = "LLM accuracy identifier using alpha research"
+readme = "README.md"
+authors = [
+    { name = "Kaleb Hall", email = "kaalhall@ucsc.edu" }
+]
+requires-python = ">=3.14"
+dependencies = []
+
+[project.scripts]
+sentinel = "sentinel:main"
+
+[build-system]
+requires = ["uv_build>=0.12.1,<0.13.0"]
+build-backend = "uv_build"
+
+
+[tool.ruff]
+target-version = "py311"
+line-length = 88
+
+[tool.ruff.lint]
+select = ["E", "W", "F", "I", "B", "UP"]
+ignore = []
+
+[tool.ruff.lint.isort]
+combine-as-imports = true
+
+[tool.pyrefly]
+project-includes = [
+    "**/*.py*",
+    "**/*.ipynb",
+]
